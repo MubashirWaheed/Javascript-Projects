@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+li{
+    list-style-type: none;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    height: 100vh;
+}
+.bg{
+    /* background-image: url(images/bench-accounting-nvzvOPQW0gc-unsplash.jpg); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center ;
+    /* height: 100%;
+    width: 100%; */
+    height: 100vh; 
+    width: 100vw;  
+    z-index: -1;  
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    /* background-size: cover;
+    background-position: center; */
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -3;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* text-align: center; */
+    margin: 150px auto 20px auto;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-row li{
+    padding: 10px;
+    margin: 10px;
+    font-size: 5rem;
+    background-color: gainsboro;
+    box-shadow: 1px 2px 3px grey;
+}
+/* p{
+    color: black;
+    text-shadow: 2px grey;
+    margin-left: 20px;
+} */
